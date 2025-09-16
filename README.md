@@ -12,7 +12,7 @@
 
 This project explores **airline passenger satisfaction** using data-driven methods. The objective is to understand **how demographic and service-related factors impact customer satisfaction** in commercial air travel.
 
-Using structured and clean code practices in Python, we preprocess, analyze, and visualize data from a real-world airline passenger dataset.
+Using structured and clean code practices in Python, we preprocess, analyze, and visualize data from a real-world airline passenger dataset. The project employs a modular approach, ensuring reproducibility and scalability for future analyses.
 
 ---
 
@@ -24,7 +24,7 @@ Using structured and clean code practices in Python, we preprocess, analyze, and
 - Which **services (e.g., cleanliness, baggage, online booking)** are most correlated with satisfaction?
 
 ---
-```
+
 ## 🗂️ Project Structure
 
 AIRLINE-PASSENGER-SATISFACTION-DATA-ANALYSIS/
@@ -60,7 +60,6 @@ AIRLINE-PASSENGER-SATISFACTION-DATA-ANALYSIS/
 ├── requirements.txt                  # Python dependencies
 └── README.md                         # Project documentation (this file)
 
-```
 ---
 
 ## 🛠️ Setup & Installation
@@ -74,14 +73,14 @@ git clone https://github.com/kaganmart9/airline-passenger-satisfaction-data-anal
 cd airline-passenger-satisfaction-data-analysis
 ```
 
-2. (Optional) Create a virtual environment:
+1. (Optional) Create a virtual environment:
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 ```
 
-3. Install dependencies:
+1. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -95,11 +94,15 @@ Each script is **modular and reproducible**. You can run them independently.
 
 ### ➤ Clean the raw dataset
 
+The `cleaning.py` script handles missing values, outliers, and standardizes the dataset for further analysis.
+
 ```bash
 python src/cleaning.py
 ```
 
 ### ➤ Analyze satisfaction by age
+
+The `age_satisfaction_prc.py` script calculates satisfaction percentages across different age groups and generates visualizations.
 
 ```bash
 python src/age_satisfaction_prc.py
@@ -107,17 +110,23 @@ python src/age_satisfaction_prc.py
 
 ### ➤ Analyze satisfaction by gender (CLI options available)
 
+The `gender_satisfaction.py` script provides insights into gender-based satisfaction levels. It supports optional flags for displaying results and adding timestamps to logs.
+
 ```bash
 python src/gender_satisfaction.py --show --timestamp
 ```
 
 ### ➤ Analyze satisfaction vs. flight distance
 
+The `distance_satisfaction.py` script examines the relationship between flight distance and satisfaction levels, producing scatter plots and statistical summaries.
+
 ```bash
 python src/distance_satisfaction.py
 ```
 
 ### ➤ Analyze service feature correlations
+
+The `service_correlation.py` script computes correlation coefficients between service-related features (e.g., cleanliness, baggage handling) and satisfaction scores.
 
 ```bash
 python src/service_correlation.py
@@ -164,7 +173,7 @@ All are saved under: `reports/tables/`
 
 | Name               | GitHub Handle                              |
 |--------------------|---------------------------------------------|
-| Kağan Mart         | [@kaganmart9](https://github.com/kaganmart9)       |
+| Ali Kağan Mart         | [@kaganmart9](https://github.com/kaganmart9)       |
 | Ahmet Hakan Ortaçbayram| [@ahakanortacbayram](https://github.com/ahakanortacbayram) |
 
 - Both contributors collaborated equally on all parts of the project, including:
