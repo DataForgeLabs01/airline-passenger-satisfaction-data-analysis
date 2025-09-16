@@ -162,10 +162,22 @@ All are saved under: `reports/tables/`
 
 ## 👥 Contributors
 
-| Name               | GitHub Handle                              | Role                  |
-|--------------------|---------------------------------------------|-----------------------|
-| Kağan Mart         | [@kaganmart9](https://github.com/kaganmart9)       | Data Cleaning, Analysis & Engineering |
-| Ahakan Ortaç Bayram| [@ahakanortacbayram](https://github.com/ahakanortacbayram) | Visualization, Interpretation, Modularization |
+| Name               | GitHub Handle                              |
+|--------------------|---------------------------------------------|
+| Kağan Mart         | [@kaganmart9](https://github.com/kaganmart9)       |
+| Ahmet Hakan Ortaçbayram| [@ahakanortacbayram](https://github.com/ahakanortacbayram) |
+
+- Both contributors collaborated equally on all parts of the project, including:
+
+- Data preprocessing & cleaning
+
+- Exploratory data analysis (EDA)
+
+- Modular Python scripting
+
+- Visualization and reporting
+
+- Workflow design and documentation
 
 ---
 
