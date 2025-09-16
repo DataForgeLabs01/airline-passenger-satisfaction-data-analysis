@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 # ----------------------
 # Load Data
@@ -96,7 +97,8 @@ def plot_correlation_hbar(corr_percent):
 # Main Workflow
 # ----------------------
 def main():
-    file_path = "/Users/ahmethakan/Desktop/Mac/Yazılım/data analiz ortak/airline-passenger-satisfaction-data-analysis/data/processed/processed.csv"
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    file_path = BASE_DIR / "data" / "processed" / "processed.csv"
     service_cols = ['Ease of Online booking','Seat comfort','Baggage handling','Cleanliness','Inflight service']
 
     # Load and prepare data

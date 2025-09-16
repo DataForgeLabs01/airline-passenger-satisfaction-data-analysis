@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 # ==========================
 # Data Loading
@@ -100,7 +101,8 @@ def plot_satisfaction(pct):
 # Main Execution
 # ==========================
 if __name__ == "__main__":
-    filepath = "/Users/ahmethakan/Desktop/Mac/Yazılım/data analiz ortak/airline-passenger-satisfaction-data-analysis/data/processed/processed.csv"
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    filepath = BASE_DIR / "data" / "processed" / "processed.csv"
     
     df = load_data(filepath)
     df = add_age_group(df)

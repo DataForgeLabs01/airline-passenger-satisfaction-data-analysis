@@ -1,13 +1,16 @@
 from pathlib import Path
 
-RAW_PATH = Path(r"C:/Users/alikm/OneDrive/Masaüstü/projects/ortak/airline-passenger-satisfaction-data-analysis/data/raw/raw-data.csv")
-PROCESSED_DIR = Path(r"C:/Users/alikm/OneDrive/Masaüstü/projects/ortak/airline-passenger-satisfaction-data-analysis/data/processed")
+# === BASE DIR ===
+BASE_DIR = Path(__file__).resolve().parent.parent  # src/ -> project root
+
+# === PATHS ===
+RAW_PATH = BASE_DIR / "data" / "raw" / "raw-data.csv"
+PROCESSED_DIR = BASE_DIR / "data" / "processed"
 PROCESSED_PATH = PROCESSED_DIR / "processed.csv"
 
+# === Ensure Output Dir Exists ===
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
-# List of columns to drop
+# === Cleaning Settings ===
 DROP_COLUMNS = ["Unnamed: 0", "id"]
-
-# Column to impute missing values
 IMPUTE_COLUMN = "Arrival Delay in Minutes"
