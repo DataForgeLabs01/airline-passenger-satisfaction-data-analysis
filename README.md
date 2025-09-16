@@ -29,32 +29,38 @@ Using structured and clean code practices in Python, we preprocess, analyze, and
 
 AIRLINE-PASSENGER-SATISFACTION-DATA-ANALYSIS/
 │
-├── data/                        # Datasets
-│   ├── raw/                     # Original dataset (raw-data.csv)
-│   └── processed/               # Cleaned dataset (processed.csv)
+├── data/
+│   ├── raw/                  # Raw dataset (e.g., raw-data.csv)
+│   └── processed/            # Cleaned dataset (e.g., processed.csv)
 │
-├── docs/                        # Project documents (e.g., plan)
-│   └── project-plan.pdf
+├── docs/
+│   └── project-plan.pdf      # Project planning and documentation
 │
-├── notebooks/                  # Jupyter Notebooks for EDA & exploration
+├── notebooks/                # Exploratory Jupyter notebooks (EDA & prototyping)
 │   ├── 03-analysis-b-age-satisfaction.ipynb
 │   ├── 04-analysis-b-gender-satisfaction.ipynb
 │   └── flight-distance-satisfaction-scatter-analysis.ipynb
 │
-├── reports/                    # Final outputs
-│   ├── figures/                # Visualizations (bar, pie, stacked, boxplot etc.)
-│   └── tables/                 # Summary statistics (CSV)
+├── reports/
+│   ├── figures/              # All generated visualizations (PNG)
+│   │   ├── age_group_satisfaction_bar.png
+│   │   ├── gender_satisfaction_pies_clean.png
+│   │   └── ...etc
+│   └── tables/               # Summary tables/statistics (CSV)
+│       ├── flight_distance_satisfaction_stats.csv
+│       └── gender_satisfaction_percent.csv
 │
-├── src/                        # Modular Python scripts for reproducible analysis
-│   ├── config.py               # Path and config management
-│   ├── cleaning.py             # Data cleaning logic
-│   ├── age_satisfaction_prc.py # Age group satisfaction analysis
-│   ├── gender_satisfaction.py  # Gender-based analysis (with CLI options)
-│   ├── distance_satisfaction.py # Flight distance visual analysis
-│   └── service_correlation.py  # Correlation between service quality and satisfaction
+├── src/                      # All modular, reproducible Python scripts
+│   ├── config.py                     # Centralized paths and constants
+│   ├── cleaning.py                   # Data cleaning pipeline
+│   ├── age_satisfaction_prc.py       # Age-based satisfaction analysis
+│   ├── gender_satisfaction.py        # Gender-based analysis (CLI-friendly)
+│   ├── distance_satisfaction.py      # Flight distance analysis
+│   └── service_correlation.py        # Correlation between service features and satisfaction
 │
-├── requirements.txt            # Required Python packages
-└── README.md                   # You are here 📄
+├── requirements.txt          # Python package dependencies
+└── README.md                 # Project documentation (this file)
+
 
 ---
 
