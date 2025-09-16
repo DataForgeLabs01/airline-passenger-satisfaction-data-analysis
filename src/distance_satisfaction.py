@@ -1,4 +1,4 @@
-# src/analysis_b/distance_satisfaction.py
+# src/distance_satisfaction.py
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -6,6 +6,8 @@ import seaborn as sns
 import numpy as np
 from pathlib import Path
 from matplotlib.patches import Patch
+from config import BASE_DIR as repo_root
+
 
 def load_and_prepare(path: Path) -> pd.DataFrame:
     """Load dataset, select relevant columns, and prepare satisfaction labels"""
@@ -117,8 +119,6 @@ def save_stats(stats: pd.DataFrame, tbl_path: Path):
     stats.to_csv(tbl_path)
 
 def main():
-    # Resolve repo root based on current file location
-    repo_root = Path(__file__).resolve().parents[2]  # go 2 levels up from src/analysis_b
     
     input_path = repo_root / "data" / "processed" / "processed.csv"
     fig_path = repo_root / "reports" / "figures" / "flight_distance_satisfaction.png"

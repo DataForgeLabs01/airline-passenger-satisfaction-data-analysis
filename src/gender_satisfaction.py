@@ -18,7 +18,7 @@ import sys, os, math
 from pathlib import Path
 
 # ensure working directory is the repo root so relative output paths are stable
-REPO_ROOT = Path(__file__).resolve().parents[2]  # .../repo
+REPO_ROOT = Path(__file__).resolve().parent.parent  # .../repo
 os.chdir(REPO_ROOT)
 
 try:
