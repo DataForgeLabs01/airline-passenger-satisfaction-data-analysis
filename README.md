@@ -27,39 +27,7 @@ Using structured and clean code practices in Python, we preprocess, analyze, and
 
 ## 🗂️ Project Structure
 
-AIRLINE-PASSENGER-SATISFACTION-DATA-ANALYSIS/
-│
-├── data/
-│   ├── raw/                  # Raw dataset (e.g., raw-data.csv)
-│   └── processed/            # Cleaned dataset (e.g., processed.csv)
-│
-├── docs/
-│   └── project-plan.pdf      # Project planning and documentation
-│
-├── notebooks/                # Exploratory Jupyter notebooks (EDA & prototyping)
-│   ├── 03-analysis-b-age-satisfaction.ipynb
-│   ├── 04-analysis-b-gender-satisfaction.ipynb
-│   └── flight-distance-satisfaction-scatter-analysis.ipynb
-│
-├── reports/
-│   ├── figures/              # All generated visualizations (PNG)
-│   │   ├── age_group_satisfaction_bar.png
-│   │   ├── gender_satisfaction_pies_clean.png
-│   │   └── ...etc
-│   └── tables/               # Summary tables/statistics (CSV)
-│       ├── flight_distance_satisfaction_stats.csv
-│       └── gender_satisfaction_percent.csv
-│
-├── src/                      # All modular, reproducible Python scripts
-│   ├── config.py                     # Centralized paths and constants
-│   ├── cleaning.py                   # Data cleaning pipeline
-│   ├── age_satisfaction_prc.py       # Age-based satisfaction analysis
-│   ├── gender_satisfaction.py        # Gender-based analysis (CLI-friendly)
-│   ├── distance_satisfaction.py      # Flight distance analysis
-│   └── service_correlation.py        # Correlation between service features and satisfaction
-│
-├── requirements.txt          # Python package dependencies
-└── README.md                 # Project documentation (this file)
+<pre> AIRLINE-PASSENGER-SATISFACTION-DATA-ANALYSIS/ ├── data/ │ ├── raw/ # Raw dataset (e.g., raw-data.csv) │ └── processed/ # Cleaned dataset (e.g., processed.csv) │ ├── docs/ │ └── project-plan.pdf # Project planning and documentation │ ├── notebooks/ # Exploratory Jupyter notebooks (EDA & prototyping) │ ├── 03-analysis-b-age-satisfaction.ipynb │ ├── 04-analysis-b-gender-satisfaction.ipynb │ └── flight-distance-satisfaction-scatter-analysis.ipynb │ ├── reports/ │ ├── figures/ # All generated visualizations (PNG) │ │ ├── age_group_satisfaction_bar.png │ │ ├── gender_satisfaction_pies_clean.png │ │ └── ...etc │ └── tables/ # Summary tables/statistics (CSV) │ ├── flight_distance_satisfaction_stats.csv │ └── gender_satisfaction_percent.csv │ ├── src/ # All modular, reproducible Python scripts │ ├── config.py # Centralized paths and constants │ ├── cleaning.py # Data cleaning pipeline │ ├── age_satisfaction_prc.py # Age-based satisfaction analysis │ ├── gender_satisfaction.py # Gender-based analysis (CLI-friendly) │ ├── distance_satisfaction.py # Flight distance analysis │ └── service_correlation.py # Correlation between services and satisfaction │ ├── requirements.txt # Python package dependencies └── README.md # Project documentation (this file) </pre>
 
 
 ---
